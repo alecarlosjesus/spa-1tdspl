@@ -1,5 +1,6 @@
 
 import reactLogo from '../assets/react.svg'
+import Rodape from './Rodape'
 
 export default function Secao(props) {
   {
@@ -11,6 +12,7 @@ export default function Secao(props) {
   return(
     <>
         <section>
+        
     <div>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quam a
@@ -26,6 +28,16 @@ export default function Secao(props) {
       </p>
       <img src={reactLogo} alt={reactAlt} />
       <img src={props.viteLogoProps} alt={props.viteAltProps} />
+      
+      <div>
+        <h2>Lista de nomes</h2>
+        <ul>
+            {props.nomesProps.map((nome,indice) => (
+                <li key={indice}>{nome}</li>
+            ))}
+        </ul>
+      </div>
+
     </div>
   </section>
     </>
