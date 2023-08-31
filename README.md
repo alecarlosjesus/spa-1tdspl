@@ -16,3 +16,4 @@ Currently, two official plugins are available:
 - Adicionando o atributo children no objeto de rotas e adicionar as rotas Home, Produtos, EditarProdutos e Erro404.
 - Alterando o componente que será renderizado pelo ReactDom.render para o RouterProvider com o objeto de rotas(router).
 - Iniciando o componente Outlet para renderizar as rotas filhas.
+- Criando rotas com o componente Link.
