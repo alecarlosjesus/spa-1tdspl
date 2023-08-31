@@ -14,10 +14,9 @@ export default function App(){
   return(
     <>
       <Lista />
-      <Secao  viteLogoProps={viteLogo} viteAtlProps={viteAtl} nomesProps={nomes}/>
+        <Secao  viteLogoProps={viteLogo} viteAtlProps={viteAtl} nomesProps={nomes}/>
       <Rodape />
       
-
     </>
   );
 
