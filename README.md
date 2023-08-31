@@ -20,3 +20,4 @@ Currently, two official plugins are available:
 - Criar um módulo de representação de um objeto de produto com o nome de ListaProduto, este objeto vai ter os seguintes atributos: id, nome, preco e descricao.
 - Recuperando a lista de produtos do arquivo ListaProdutos.jsx e adicionando no estado do componente Produtos.
 - Em produtos vamos criar uma tabela para exibir os produtos e adicionar um link para editar o produto.
+- Adicionando CSS inline nos elementos da tabela com style objects.
