@@ -17,3 +17,6 @@ Currently, two official plugins are available:
 - Alterando o componente que será renderizado pelo ReactDom.render para o RouterProvider com o objeto de rotas(router).
 - Iniciando o componente Outlet para renderizar as rotas filhas.
 - Criando rotas com o componente Link.
+- Criar um módulo de representação de um objeto de produto com o nome de ListaProduto, este objeto vai ter os seguintes atributos: id, nome, preco e descricao.
+- Recuperando a lista de produtos do arquivo ListaProdutos.jsx e adicionando no estado do componente Produtos.
+- Em produtos vamos criar uma tabela para exibir os produtos e adicionar um link para editar o produto.
