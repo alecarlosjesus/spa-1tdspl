@@ -14,3 +14,5 @@ Currently, two official plugins are available:
 - Alterar o arquivo main.jsx, adicionando os imports para os objetos de rotas e o createBrowserRouter e RouterProvider.
 - Criando o objeto de rotas e adicionando apenas a rota App e exibindo com o RouterProvider.
 - Adicionando o atributo children no objeto de rotas e adicionar as rotas Home, Produtos, EditarProdutos e Erro404.
+- Alterando o componente que será renderizado pelo ReactDom.render para o RouterProvider com o objeto de rotas(router).
+- Iniciando o componente Outlet para renderizar as rotas filhas.
