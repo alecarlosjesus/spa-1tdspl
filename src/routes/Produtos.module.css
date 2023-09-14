@@ -4,19 +4,43 @@
     border-collapse: collapse;
     border: 2px solid #ccc;
     margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     .tableHeaders{
-        border : 1px solid #000000;
         text-align: center;
+        background-color: #565553;
+        color: #fff;
+
+        & th{
+            border: 2px solid #ccc;
+        }
+
     }
 
-    .tableLine:hover{
-            background-color: #ccc;
-    }
-    
+    .tableLine{
+        background-color: #ccc;
+        &:hover{
+            background-color: #565553;
+            color:#fff;
+        }
 
-    .tableData{
-        border : 1px solid #000000;
+        & td{
+            border : 2px solid #e1e1e1;
+            
+            &:first-child{
+                text-align: center;
+            }
+
+            &:last-child{
+                text-align: center;
+            }
+        }
+    }
+
+    .tableFooter{
+        text-align: center;
+        background-color: #565553;
+        color: #fff;
     }
 
 }
