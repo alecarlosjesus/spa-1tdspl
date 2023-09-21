@@ -6,9 +6,9 @@ import {RiDeleteBin2Fill as Excluir} from "react-icons/ri";
 import { useEffect, useState } from "react";
 
 export default function Produtos() {
+  document.title = "Lista de Produtos: ";
 
-  const [counter, setCounter] = useState(0);
-  document.title = "Lista de Produtos: " + counter;
+    
 
   return (
     <div>
@@ -34,7 +34,7 @@ export default function Produtos() {
               <td>{produto.nome}</td>
               <td>{produto.desc}</td>
               <td>{produto.preco}</td>
-              <td><img src={produto.img} alt={produto.desc} width={100}/></td>
+              <td><img src={produto.img} alt={produto.desc}/></td>
               <td>
                 <Link to={`/editar/produtos/${produto.id}`}> <Editar/></Link> | <Link to={`/excluir/produtos/${produto.id}`}> <Excluir/> </Link>
               </td>
