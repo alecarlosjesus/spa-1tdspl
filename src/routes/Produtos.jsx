@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { ListaProdutos } from "../components/ListaProdutos";
 import classes from "./Produtos.module.css";
 import { AiFillEdit as Editar } from "react-icons/ai";
 import { RiDeleteBin2Fill as Excluir } from "react-icons/ri";
 import { useEffect, useState } from "react";
+import ModalInserir from "../components/ModalInserir/ModalInserir";
 
 export default function Produtos() {
   document.title = "Lista de Produtos: ";
@@ -22,10 +22,16 @@ export default function Produtos() {
       .catch((error) => console.log(error));
   }, []);
 
+
+  const [open, setOpen] = useState(false);
+
   return (
     <div>
       <h1>Produtos de INFORMÁTICA - FIPAPI</h1>
       <p>Os Melhores Produtos do Mercado</p>
+
+      {open ? <ModalInserir open={open} setOpen={setOpen}/> : ""}
+      <button onClick={()=> setOpen(true)}>OPEN-MODAL</button>
 
       <table className={classes.estilo}>
         <thead className={classes.tableHeaders}>

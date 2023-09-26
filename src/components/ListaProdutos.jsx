@@ -6,4 +6,4 @@ export const ListaProdutos = [
     {id:4, nome:'HeadSet', desc:'8D', preco: 550, img:'https://picsum.photos/100/100'},
     {id:5, nome:'Cadeira Gamer', desc:'Telescópica', preco: 2500, img:'https://picsum.photos/100/100'}
 
-]
+] 
