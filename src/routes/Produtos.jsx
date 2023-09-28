@@ -22,7 +22,6 @@ export default function Produtos() {
       .catch((error) => console.log(error));
   }, []);
 
-
   const [open, setOpen] = useState(false);
 
   return (
@@ -31,7 +30,8 @@ export default function Produtos() {
       <p>Os Melhores Produtos do Mercado</p>
 
       {open ? <ModalInserir open={open} setOpen={setOpen}/> : ""}
-      <button onClick={()=> setOpen(true)}>OPEN-MODAL</button>
+
+      <Link onClick={()=> setOpen(true)}>Cadastro de Produtos</Link>
 
       <table className={classes.estilo}>
         <thead className={classes.tableHeaders}>
