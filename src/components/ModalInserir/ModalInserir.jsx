@@ -1,15 +1,16 @@
 import styles from "./ModalInserir.module.css";
+import "./ModalInserir.scss";
 
 export default function ModalInserir(props) {
   if (props.open) {
     return (
       <div className={styles.container}>
         <h1>CADASTRO DE PRODUTOS</h1>
-        <button onClick={()=> props.setOpen(false)}>CLOSE-MODAL</button>
 
         <div>
-          <form>
+          <form className="formGroup">
             <fieldset>
+        <span  className="btnClose" onClick={()=> props.setOpen(false)}>X</span>
               <legend>Novo Produto</legend>
               <div className="formInput">
                 <label htmlFor="idNome">Nome</label>
