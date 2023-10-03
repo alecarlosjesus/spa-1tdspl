@@ -5,10 +5,24 @@ export default function Cabecalho(props) {
     <>
       <header>
         <ul>
-          {props.children.map((item, indice) => {
-            createElement("li", { key: indice }, item);
-            return item;
-          })}
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/produtos">Produtos</Link>
+          </li>
+          <li>
+            <Link to="/cadastrar">Cadastrar Produtos</Link>
+          </li>{" "}
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/produtos">Produtos</Link>
+          </li>
+          <li>
+            <Link to="/cadastrar">Cadastrar Produtos</Link>
+          </li>
         </ul>
       </header>
     </>
