@@ -4,7 +4,6 @@ export default function Cabecalho(props) {
   return (
     <>
       <header>
-        <h1>Vite + React / coded by LeoYuuki+Tio</h1>
         <ul>
           {props.children.map((item, indice) => {
             createElement("li", { key: indice }, item);
